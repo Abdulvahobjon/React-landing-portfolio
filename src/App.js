@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./peach/Home";
+import About from "./peach/About";
+import Contact from "./peach/Contact";
+import Portfolio from "./peach/Portfolio";
+import Skills from "./peach/Skills";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Portfolio" element={<Portfolio/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
+          <Route path="/Skills" element={<Skills/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
