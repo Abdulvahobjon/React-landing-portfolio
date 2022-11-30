@@ -23,7 +23,7 @@ body{
 
 .header{
   background: rgb(225,198,186);
-  /* background: linear-gradient(93deg, rgba(225,198,186,1) 0%, rgba(95,71,63,1) 98%, rgba(102,82,73,1) 100%, rgba(99,79,70,1) 100%); */
+  background: linear-gradient(93deg, rgba(225,198,186,1) 0%, rgba(95,71,63,1) 98%, rgba(102,82,73,1) 100%, rgba(99,79,70,1) 100%);
   background-image: url("./images/header-banner.png");  
   padding-top: 93px;
   padding-bottom: 240px;
